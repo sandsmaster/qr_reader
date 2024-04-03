@@ -4,7 +4,13 @@ QR Code Scanner - v0.1 :
         + VS Code
         + Python
         + Git
-    2. Reader development
-        -  
-    3. Migration to phone
-    4. Server development
+    2  Generate QR code
+        + Create QR code generator
+    3. QR reader development
+        + Create QR code reader
+    4. Migration to phone
+        - Create Mobile UI
+        - Add QR generator
+        - Add QR reader
+    5. Server development
+        - Decide between API and webpage
