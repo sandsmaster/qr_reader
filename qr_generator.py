@@ -1,4 +1,5 @@
 import segno
 
-qr = segno.make_qr(r'https://www.youtube.com/watch?v=jIQ6UV2onyI')
-qr.save("qr_codes/cool_qr.png")
+def get_qr(text):
+    qr = segno.make_qr(text)
+    qr.save("qr_codes/cool_qr.png")
