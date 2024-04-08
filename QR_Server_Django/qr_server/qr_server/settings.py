@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    ".pinggy.io"
+    ".pinggy.io",
+    "192.168.8.200"
 ]
 
 

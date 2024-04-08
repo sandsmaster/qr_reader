@@ -11,9 +11,37 @@
             h1 {
                 font-size: 3.5em;
             }
+
+            .offer {
+                display: inline-block;
+                border: 2px solid black;
+                max-width: 30%;
+                color: black;
+                padding: 10px;
+                margin: 10px 3px;
+                background-color: rgba(200, 200, 200, 0.8);
+            }
+
+            .pLimit {
+                text-align: right;
+            }
+            
         </style>
     </head>
     <body>
         <h1>Offers for today</h1>
+        <div>
+            {% for ad in ads %}
+            <div class="offer">
+                <h2>{{ad.store_name}}</h2>
+                <p>{{ad.description}}</p>
+                <h4>
+                    <span><b>Location: </b>{{ad.location}}</span> 
+                    <br />
+                    <span class="pLimit">{% if ad.num_limit %}<b>People Limit: </b>{{ad.num_limit}}{% endif %}</span>
+                </h4>
+            </div>
+            {% endfor %}
+        </div>
     </body>
 </html>
