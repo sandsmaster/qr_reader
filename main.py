@@ -29,7 +29,5 @@ class MyApp(App):
         return root_layout
 
 if __name__ == '__main__':
-    MyApp().run()
-
-#img_path = r'C:\Users\Vager\Desktop\Slavi_QR\qr_codes\cool_qr.png'
-#qr_text = r'https://www.youtube.com/watch?v=jIQ6UV2onyI'
+    img_path = r'C:\Users\Vager\Desktop\Slavi_QR\qr_codes\cool_qr.png'
+    qr_text = r'https://www.youtube.com/watch?v=jIQ6UV2onyI'
